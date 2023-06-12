@@ -1,3 +1,9 @@
+"""
+Keira Chen
+Weather Finder code-your-own project
+This was made partially following a Replit tutorial for using web APIs.
+"""
+
 import urllib.request
 import json
 
