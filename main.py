@@ -1,10 +1,10 @@
 import urllib.request
 import json
 
-apikey = "714c2da2279a72ec8bb713798409d352"
+APIKey = "714c2da2279a72ec8bb713798409d352"
 
 city_name = input("Search for a city by name: ")
-url = "https://api.openweathermap.org/data/2.5/weather?q=%s&APPID=%s" % (city_name, apikey)
+url = "https://api.openweathermap.org/data/2.5/weather?q=%s&APPID=%s" % (city_name, APIKey)
 
 req = urllib.request.urlopen(url).read().decode()
 data = json.loads(req)
